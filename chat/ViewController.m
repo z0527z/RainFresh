@@ -62,6 +62,7 @@
     [self.view addSubview:label];
     
     
+    // 微博内容显示方案
     // UITextView for UITextKit
     NSMutableAttributedString * attributedStringTest = [[NSMutableAttributedString alloc] initWithString:@"＠啊哈 收到飒飒地方发送发大水接啊阿拉山大师傅都是反复发撒旦法是否口撒娇的了发诺@哈哟😄"];
     [attributedStringTest addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:18.f] range:NSMakeRange(0, attributedStringTest.length)];
@@ -90,7 +91,6 @@
                                      NSUnderlineStyleAttributeName: @(NSUnderlinePatternSolid)};
     
     UITextView * textView = [[UITextView alloc] init];
-//    textView.backgroundColor = [UIColor grayColor];
     textView.editable = NO;
     textView.linkTextAttributes = linkAttributes;
     textView.attributedText = attributedStringTest;

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BE255366-27BD-4C1D-94B6-8FA26336BBD8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>chat</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DD7F43ACA1021BE886BD0C6DF95681EED83FA6B4</key>
+		<string>https://github.com/z0527z/RainFresh.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>chat.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DD7F43ACA1021BE886BD0C6DF95681EED83FA6B4</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/z0527z/RainFresh.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DD7F43ACA1021BE886BD0C6DF95681EED83FA6B4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DD7F43ACA1021BE886BD0C6DF95681EED83FA6B4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>chat</string>
+		</dict>
+	</array>
+</dict>
+</plist>
