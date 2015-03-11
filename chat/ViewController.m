@@ -76,13 +76,14 @@
                              value:@"http://www.baidu.com"
                              range:NSMakeRange(0, 3)];
     [attributedStringTest addAttribute:NSLinkAttributeName
-                                 value:@"http://www.baidu.com"
+                                 value:@"http://www.cocoachina.com"
                                  range:NSMakeRange(10, 5)];
     [attributedStringTest addAttribute:NSLinkAttributeName
-                                 value:@"http://www.baidu.com"
+                                 value:@"http://www.raywenderlich.com"
                                  range:NSMakeRange(25, 5)];
+    // 可用于 @人 话题的交互处理
     [attributedStringTest addAttribute:NSLinkAttributeName
-                                 value:@"http://www.dayhr.com"
+                                 value:@"file://viewController"
                                  range:NSMakeRange(8, 2)];
     [attributedStringTest insertAttributedString:attributedString atIndex:8];
     [attributedStringTest insertAttributedString:attributedString atIndex:20];
@@ -91,6 +92,7 @@
                                      NSUnderlineStyleAttributeName: @(NSUnderlinePatternSolid)};
     
     UITextView * textView = [[UITextView alloc] init];
+    textView.delegate = self;
     textView.editable = NO;
     textView.linkTextAttributes = linkAttributes;
     textView.attributedText = attributedStringTest;
