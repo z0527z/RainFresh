@@ -26,8 +26,18 @@
 		2D1C90351A8C92C6006A63BA /* chatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C90341A8C92C6006A63BA /* chatTests.m */; };
 		2D1D12E81AA5B8D800996D30 /* QLLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1D12E71AA5B8D800996D30 /* QLLabel.m */; };
 		2D1D12EB1AA5BB1D00996D30 /* NSString+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1D12EA1AA5BB1D00996D30 /* NSString+Custom.m */; };
+		2D3044241AB811CE005DBBDB /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D3044231AB811CE005DBBDB /* libsqlite3.0.dylib */; };
+		2D7F787D1AC134820003AA2F /* QLWeiboContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7F787C1AC134820003AA2F /* QLWeiboContentView.m */; };
+		2D7F78801AC134C70003AA2F /* QLWeiboContentLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7F787F1AC134C70003AA2F /* QLWeiboContentLayoutManager.m */; };
+		2D7F78831AC134E80003AA2F /* QLWeiboContentStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7F78821AC134E80003AA2F /* QLWeiboContentStorage.m */; };
+		2D7FDB931ABA6AD800B4F9F5 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7FDB921ABA6AD800B4F9F5 /* TableViewCell.m */; };
+		2D7FDB951ABA966200B4F9F5 /* d_xiaoku@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D7FDB941ABA966200B4F9F5 /* d_xiaoku@2x.png */; };
+		2D7FDB9E1ABAA76A00B4F9F5 /* BrowserImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7FDB981ABAA76A00B4F9F5 /* BrowserImageView.m */; };
+		2D7FDB9F1ABAA76A00B4F9F5 /* SDPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7FDB9A1ABAA76A00B4F9F5 /* SDPhotoBrowser.m */; };
+		2D7FDBA01ABAA76A00B4F9F5 /* SDWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7FDB9D1ABAA76A00B4F9F5 /* SDWaitingView.m */; };
 		2DF04BCA1AA8037900C4B163 /* d_numa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF04BC91AA8037900C4B163 /* d_numa@2x.png */; };
 		2DF04BCC1AA804EA00C4B163 /* d_numa_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF04BCB1AA804EA00C4B163 /* d_numa_s@2x.png */; };
+		2DFCD8861ABFC03D00FF88D1 /* QLTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFCD8851ABFC03D00FF88D1 /* QLTextStorage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,8 +81,27 @@
 		2D1D12E71AA5B8D800996D30 /* QLLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLLabel.m; sourceTree = "<group>"; };
 		2D1D12E91AA5BB1D00996D30 /* NSString+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Custom.h"; sourceTree = "<group>"; };
 		2D1D12EA1AA5BB1D00996D30 /* NSString+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Custom.m"; sourceTree = "<group>"; };
+		2D3044231AB811CE005DBBDB /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		2D7F787B1AC134820003AA2F /* QLWeiboContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLWeiboContentView.h; sourceTree = "<group>"; };
+		2D7F787C1AC134820003AA2F /* QLWeiboContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLWeiboContentView.m; sourceTree = "<group>"; };
+		2D7F787E1AC134C70003AA2F /* QLWeiboContentLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLWeiboContentLayoutManager.h; sourceTree = "<group>"; };
+		2D7F787F1AC134C70003AA2F /* QLWeiboContentLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLWeiboContentLayoutManager.m; sourceTree = "<group>"; };
+		2D7F78811AC134E80003AA2F /* QLWeiboContentStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLWeiboContentStorage.h; sourceTree = "<group>"; };
+		2D7F78821AC134E80003AA2F /* QLWeiboContentStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLWeiboContentStorage.m; sourceTree = "<group>"; };
+		2D7FDB911ABA6AD800B4F9F5 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		2D7FDB921ABA6AD800B4F9F5 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		2D7FDB941ABA966200B4F9F5 /* d_xiaoku@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "d_xiaoku@2x.png"; sourceTree = "<group>"; };
+		2D7FDB971ABAA76A00B4F9F5 /* BrowserImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowserImageView.h; sourceTree = "<group>"; };
+		2D7FDB981ABAA76A00B4F9F5 /* BrowserImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowserImageView.m; sourceTree = "<group>"; };
+		2D7FDB991ABAA76A00B4F9F5 /* SDPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPhotoBrowser.h; sourceTree = "<group>"; };
+		2D7FDB9A1ABAA76A00B4F9F5 /* SDPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPhotoBrowser.m; sourceTree = "<group>"; };
+		2D7FDB9B1ABAA76A00B4F9F5 /* SDPhotoBrowserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPhotoBrowserConfig.h; sourceTree = "<group>"; };
+		2D7FDB9C1ABAA76A00B4F9F5 /* SDWaitingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWaitingView.h; sourceTree = "<group>"; };
+		2D7FDB9D1ABAA76A00B4F9F5 /* SDWaitingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWaitingView.m; sourceTree = "<group>"; };
 		2DF04BC91AA8037900C4B163 /* d_numa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "d_numa@2x.png"; sourceTree = "<group>"; };
 		2DF04BCB1AA804EA00C4B163 /* d_numa_s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "d_numa_s@2x.png"; sourceTree = "<group>"; };
+		2DFCD8841ABFC03D00FF88D1 /* QLTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLTextStorage.h; sourceTree = "<group>"; };
+		2DFCD8851ABFC03D00FF88D1 /* QLTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLTextStorage.m; sourceTree = "<group>"; };
 		4462A7A280165E3EBE9B0F2E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		691E75E254A11EDE1037D22B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		AA9CFF65C3F9E72FAC5398BC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D3044241AB811CE005DBBDB /* libsqlite3.0.dylib in Frameworks */,
 				0DC672697D0BF040A0A29DDE /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,10 +130,14 @@
 		2D16FC161AA9542900BB45BE /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				2D7F787A1AC133D10003AA2F /* QLWeiboContentView */,
+				2DFCD8831ABFBFCE00FF88D1 /* TextKit */,
 				2D1C901F1A8C92C6006A63BA /* ViewController.h */,
 				2D1C90201A8C92C6006A63BA /* ViewController.m */,
 				2D16FC131AA9541800BB45BE /* ListViewController.h */,
 				2D16FC141AA9541800BB45BE /* ListViewController.m */,
+				2D7FDB911ABA6AD800B4F9F5 /* TableViewCell.h */,
+				2D7FDB921ABA6AD800B4F9F5 /* TableViewCell.m */,
 			);
 			name = VC;
 			sourceTree = "<group>";
@@ -171,6 +205,7 @@
 			children = (
 				2D16FC171AA9544B00BB45BE /* Other */,
 				2D16FC201AA9742A00BB45BE /* EGO */,
+				2D7FDB961ABAA76A00B4F9F5 /* SDPhotoBrowser */,
 				2D16FC161AA9542900BB45BE /* VC */,
 				2D1C90181A8C92C6006A63BA /* Supporting Files */,
 			);
@@ -180,6 +215,7 @@
 		2D1C90181A8C92C6006A63BA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2D7FDB941ABA966200B4F9F5 /* d_xiaoku@2x.png */,
 				2D16FC281AA9902500BB45BE /* image */,
 				2D1C90221A8C92C6006A63BA /* Main.storyboard */,
 				2D1C90251A8C92C6006A63BA /* Images.xcassets */,
@@ -209,6 +245,42 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2D7F787A1AC133D10003AA2F /* QLWeiboContentView */ = {
+			isa = PBXGroup;
+			children = (
+				2D7F787B1AC134820003AA2F /* QLWeiboContentView.h */,
+				2D7F787C1AC134820003AA2F /* QLWeiboContentView.m */,
+				2D7F787E1AC134C70003AA2F /* QLWeiboContentLayoutManager.h */,
+				2D7F787F1AC134C70003AA2F /* QLWeiboContentLayoutManager.m */,
+				2D7F78811AC134E80003AA2F /* QLWeiboContentStorage.h */,
+				2D7F78821AC134E80003AA2F /* QLWeiboContentStorage.m */,
+			);
+			name = QLWeiboContentView;
+			sourceTree = "<group>";
+		};
+		2D7FDB961ABAA76A00B4F9F5 /* SDPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				2D7FDB971ABAA76A00B4F9F5 /* BrowserImageView.h */,
+				2D7FDB981ABAA76A00B4F9F5 /* BrowserImageView.m */,
+				2D7FDB991ABAA76A00B4F9F5 /* SDPhotoBrowser.h */,
+				2D7FDB9A1ABAA76A00B4F9F5 /* SDPhotoBrowser.m */,
+				2D7FDB9B1ABAA76A00B4F9F5 /* SDPhotoBrowserConfig.h */,
+				2D7FDB9C1ABAA76A00B4F9F5 /* SDWaitingView.h */,
+				2D7FDB9D1ABAA76A00B4F9F5 /* SDWaitingView.m */,
+			);
+			path = SDPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		2DFCD8831ABFBFCE00FF88D1 /* TextKit */ = {
+			isa = PBXGroup;
+			children = (
+				2DFCD8841ABFC03D00FF88D1 /* QLTextStorage.h */,
+				2DFCD8851ABFC03D00FF88D1 /* QLTextStorage.m */,
+			);
+			name = TextKit;
+			sourceTree = "<group>";
+		};
 		8CC6DA049683C660F7FB64B3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +293,7 @@
 		FDB3B62EB536CEB447EDC5F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2D3044231AB811CE005DBBDB /* libsqlite3.0.dylib */,
 				AA9CFF65C3F9E72FAC5398BC /* libPods.a */,
 			);
 			name = Frameworks;
@@ -308,6 +381,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D7FDB951ABA966200B4F9F5 /* d_xiaoku@2x.png in Resources */,
 				2D16FC301AA9903200BB45BE /* pulldown_half_img@2x.png in Resources */,
 				2D1C90241A8C92C6006A63BA /* Main.storyboard in Resources */,
 				2D16FC321AA9903200BB45BE /* refresh_one_img@2x.png in Resources */,
@@ -372,11 +446,19 @@
 				2D1C90211A8C92C6006A63BA /* ViewController.m in Sources */,
 				2D1D12E81AA5B8D800996D30 /* QLLabel.m in Sources */,
 				2D16FC261AA9742A00BB45BE /* EGORefreshTableFooterView.m in Sources */,
+				2DFCD8861ABFC03D00FF88D1 /* QLTextStorage.m in Sources */,
 				2D16FC151AA9541800BB45BE /* ListViewController.m in Sources */,
+				2D7F78831AC134E80003AA2F /* QLWeiboContentStorage.m in Sources */,
+				2D7FDB9F1ABAA76A00B4F9F5 /* SDPhotoBrowser.m in Sources */,
+				2D7FDB931ABA6AD800B4F9F5 /* TableViewCell.m in Sources */,
+				2D7FDB9E1ABAA76A00B4F9F5 /* BrowserImageView.m in Sources */,
+				2D7F787D1AC134820003AA2F /* QLWeiboContentView.m in Sources */,
 				2D16FC271AA9742A00BB45BE /* EGORefreshTableHeaderView.m in Sources */,
 				2D1D12EB1AA5BB1D00996D30 /* NSString+Custom.m in Sources */,
 				2D1C901E1A8C92C6006A63BA /* AppDelegate.m in Sources */,
+				2D7F78801AC134C70003AA2F /* QLWeiboContentLayoutManager.m in Sources */,
 				2D1C901B1A8C92C6006A63BA /* main.m in Sources */,
+				2D7FDBA01ABAA76A00B4F9F5 /* SDWaitingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

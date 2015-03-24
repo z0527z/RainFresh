@@ -7,10 +7,9 @@
 //
 
 #import "AppDelegate.h"
-#import <XMPP.h>
 
 @interface AppDelegate ()
-@property (nonatomic, strong) XMPPStream * xmppStream;
+
 @end
 
 @implementation AppDelegate
@@ -18,7 +17,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    self.xmppStream = [[XMPPStream alloc] init];
     
     return YES;
 }

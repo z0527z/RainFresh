@@ -4,17 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-CocoaAsyncSocket.xcscheme</key>
+		<key>Pods-MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-CocoaLumberjack.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-XMPPFramework.xcscheme</key>
+		<key>Pods-SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,22 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>56F6BB8E7EFBB1CD1BC44068</key>
+		<key>18F1E1ECC798B8AE8B0B18DE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9A5C599FA5523ED97E7506D3</key>
+		<key>3C8D204F0AEC4CEA8AAA7ECF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B365552134D469FFD9E63596</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C11D606E82E309BE99E437AD</key>
+		<key>EC77CA050FD1A20C97FE9C01</key>
 		<dict>
 			<key>primary</key>
 			<true/>

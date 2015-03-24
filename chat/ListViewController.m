@@ -10,6 +10,9 @@
 #import "EGORefreshTableHeaderView.h"
 #import "EGORefreshTableFooterView.h"
 
+// test
+#import "TableViewCell.h"
+
 @interface ListViewController () <UITableViewDelegate, UITableViewDataSource, EGORefreshTableDelegate>
 {
     UITableView * _tableView;
@@ -18,6 +21,7 @@
     //EGOFoot
     EGORefreshTableFooterView *_refreshFooterView;
     NSMutableArray * _dataArray;
+    CGFloat _cellHeight;
 }
 @end
 
@@ -32,9 +36,9 @@
     
     UITableView * tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     _tableView = tableView;
+    tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     tableView.delegate = self;
     tableView.dataSource = self;
-    tableView.rowHeight = 70;
     [self.view addSubview:tableView];
     
     [self createHeaderView];
@@ -46,7 +50,7 @@
 
 - (void)createHeaderView
 {
-    _refreshHeaderView = [[EGORefreshTableHeaderView alloc] initWithFrame:CGRectMake(0.0f, 0.0f - self.view.bounds.size.height, self.view.frame.size.width, self.view.bounds.size.height)];
+    _refreshHeaderView = [[EGORefreshTableHeaderView alloc] initWithFrame:CGRectMake(0.0f, 0.0f - 65.0f, self.view.frame.size.width, 65.0f)];
     _refreshHeaderView.delegate = self;
     [_tableView addSubview:_refreshHeaderView];
 }
@@ -61,9 +65,54 @@
 
 - (void)fakeData
 {
-    for (NSInteger i = 0; i < 10; i ++) {
-        [_dataArray addObject:[NSString stringWithFormat:@"%ld", i]];
+    for (NSInteger i = 0; i < 1; i ++) {
+
+        NSDictionary * dict = @{@"profileImgUrl" : @"http://tp4.sinaimg.cn/2814680487/180/22870552345/0",
+                                @"name" : @"笑话君",
+                                @"time" : @"刚刚",
+                                @"place" : @"香格里拉",
+                                @"content" : @"没有你替我呼吸，\n我连命都活不下去！😂",
+                                @"images" : @[@"http://ww4.sinaimg.cn/thumbnail/a7c49da7jw1eqat8pbpuwj20c80lzgnp.jpg"]
+                                };
+        
+        WeiboModel * model = [[WeiboModel alloc] initWithDict:dict];
+        
+        CGFloat height = [self caculateCellHeight:model];
+        _cellHeight = height;
+        
+        [_dataArray addObject:model];
     }
+}
+
+- (CGFloat)caculateCellHeight:(WeiboModel *)model
+{
+    CGFloat height;
+    
+    // 头像偏移
+    height += 15;
+    
+    // 头像高度
+    height += 32;
+    
+    // 文字和头像间距
+    height += 7;
+    
+    UITextView * textView = [[UITextView alloc] init];
+    textView.font = [UIFont systemFontOfSize:16.0f];
+    textView.text = model.content;
+    
+    CGSize contentSize = [textView sizeThatFits:CGSizeMake(CGRectGetWidth(self.view.bounds), 100)];
+    model.contentHeight = contentSize.height;
+    // 内容高度
+    height += contentSize.height;
+    
+    // 配图距离内容距离
+    height += 8;
+    
+    // 图片高度
+    height += 80;
+    
+    return height;
 }
 
 
@@ -73,15 +122,21 @@
     return _dataArray.count;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return _cellHeight;
+}
+
 - (UITableViewCell * )tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString * identifier = @"cell";
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    TableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        cell = [[TableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     
-    cell.textLabel.text = _dataArray[indexPath.row];
+//    cell.textLabel.text = _dataArray[indexPath.row];
+    cell.model = _dataArray[indexPath.row];
     
     return cell;
 }
@@ -102,7 +157,7 @@
         });
     }
     else if ([view isKindOfClass:[EGORefreshTableFooterView class]]) {
-        [_dataArray addObject:@"10"];
+
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             NSLog(@"上拉加载更多完成");
             
