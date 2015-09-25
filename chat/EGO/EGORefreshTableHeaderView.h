@@ -43,7 +43,10 @@
 //- (void)egoRefreshScrollViewDidEndDragging:(UIScrollView *)scrollView;
 //- (void)egoRefreshScrollViewDataSourceDidFinishedLoading:(UIScrollView *)scrollView;
 
+
 // dql
+
+- (void)addHeaderWithTarget:(id)target action:(SEL)action;
 - (void)beginRefresh;
 - (void)endRefresh;
 @end

@@ -23,11 +23,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor blueColor];
+//    self.view.backgroundColor = [UIColor blueColor];
     
 //    [self methodForCustomedUITextView];
     
 //    [self methodForDefaultUITextView];
+    
+    [self methodForLabel];
     
     [self methodForWeiboContentView];
     
@@ -42,14 +44,18 @@
 //    NSLog(@"%@", matches);
     
     //    [self buildFrames];
+    
+    UIImageView * imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 200, 100, 100)];
+    UIImage * image = [UIImage imageNamed:@"nav_bg_img.psd"];
+    [self.view addSubview:imageView];
 }
 
 #pragma mark - Label 方案
 - (void)methodForLabel
 {
-    NSString * string = @"😄哈哈款到即发http://www.baidu.com";
+    NSString * string = @"😄哈哈款到即发@jolin_d";
     NSMutableAttributedString * contentString = [[[NSAttributedString alloc] initWithString:string] mutableCopy];
-    [contentString addAttribute:NSLinkAttributeName value:@"http://www.baidu.com" range:NSMakeRange(8, 20)];
+    [contentString addAttribute:NSLinkAttributeName value:@"http://www.baidu.com" range:NSMakeRange(8, 5)];
     _contentString = contentString;
     
     UIImage * image = [UIImage imageNamed:@"d_numa_s.png"];
@@ -63,7 +69,7 @@
     
     QLLabel * label = [[QLLabel alloc] init];
     label.numberOfLines = 0;
-    label.backgroundColor = [UIColor grayColor];
+//    label.backgroundColor = [UIColor grayColor];
     label.attributedText = contentString;
     
     float height = [label sizeThatFits:CGSizeMake(200, 100)].height;

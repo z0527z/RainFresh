@@ -25,6 +25,7 @@ typedef enum{
 	EGORefreshFooter	
 } EGORefreshPos;
 
+
 @protocol EGORefreshTableDelegate
 - (void)egoRefreshTableView:(UIView *)view DidTriggerRefresh:(EGORefreshPos)aRefreshPos;
 //- (BOOL)egoRefreshTableDataSourceIsLoading:(UIView*)view;

@@ -85,9 +85,9 @@
 
         [self addAttributes:colorAttributes range:matchRange];
         
-        if (NSMaxRange(matchRange) + 1 < self.length) {
-            [self addAttributes:normalAttributes range:NSMakeRange(NSMaxRange(matchRange) + 1, 1)];
-        }
+//        if (NSMaxRange(matchRange) + 1 < self.length) {
+//            [self addAttributes:normalAttributes range:NSMakeRange(NSMaxRange(matchRange) + 1, 1)];
+//        }
     }];
 }
 

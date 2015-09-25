@@ -41,6 +41,7 @@
 
 
 // dql
+- (void)addFooterWithTarget:(id)target action:(SEL)action;
 - (void)beginRefresh;
 - (void)endRefresh;
 @end

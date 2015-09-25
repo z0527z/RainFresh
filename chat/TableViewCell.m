@@ -8,10 +8,12 @@
 
 #import "TableViewCell.h"
 #import "SDPhotoBrowser.h"
+#import "QLWeiboContentView.h"
 
-@interface TableViewCell () <SDPhotoBrowserDelegate, UITextViewDelegate>
+@interface TableViewCell () <SDPhotoBrowserDelegate, UITextViewDelegate, QLWeiboContentViewDelegate>
 {
-    UITextView * _textView;
+//    UITextView * _textView;
+    QLWeiboContentView * _weiboView;
     BOOL _contentLoaded;
 }
 @end
@@ -34,12 +36,20 @@
         self.selectionStyle = UITableViewCellSelectionStyleNone;
 //        self.backgroundColor = [UIColor lightGrayColor];
         
-        UITextView * textView = [[UITextView alloc] init];
-        _textView = textView;
-        textView.delegate = self;
-        textView.editable = NO;
-        textView.dataDetectorTypes = UIDataDetectorTypeAll;
-        [self addSubview:textView];
+//        UITextView * textView = [[UITextView alloc] init];
+//        _textView = textView;
+//        textView.delegate = self;
+//        textView.editable = NO;
+//        textView.dataDetectorTypes = UIDataDetectorTypeAll;
+//        [self addSubview:textView];
+        
+        QLWeiboContentView * WeiboView = [[QLWeiboContentView alloc] initWithFrame:CGRectMake(15, 49, 200, 1)];
+        WeiboView.backgroundColor = [UIColor blueColor];
+        WeiboView.delegate = self;
+        _weiboView = WeiboView;
+        [self addSubview:WeiboView];
+
+        
     }
     
     return self;
@@ -70,7 +80,7 @@
 //    
 //    [linkStr drawAtPoint:CGPointMake(15, 15 + 32 + 7 + 2 + 16) withAttributes:@{NSFontAttributeName : [UIFont systemFontOfSize:16.f], NSForegroundColorAttributeName: [UIColor greenColor], NSBackgroundColorAttributeName : [UIColor lightGrayColor]}];
     
-//    [image drawAtPoint:CGPointMake(10, 30) blendMode:kCGBlendModeNormal alpha:1.0];
+    [image drawAtPoint:CGPointMake(10, 30) blendMode:kCGBlendModeNormal alpha:1.0];
 //    CGContextSetRGBStrokeColor(context, 0.5, 0.5, 0.5, 0.5);//线条颜色
 //    CGContextMoveToPoint(context, 20, 30);
 //    CGContextAddLineToPoint(context, 200, 30);
@@ -84,12 +94,24 @@
     if (!_contentLoaded) {
         _contentLoaded = YES;
         
-        NSMutableAttributedString * contentAttr = [self attributedStringForContent:_model.content];
-        NSDictionary *linkAttributes = @{NSForegroundColorAttributeName: [UIColor greenColor],
-                                         NSLigatureAttributeName : @(-5)};
-        _textView.attributedText = contentAttr;
-        _textView.linkTextAttributes = linkAttributes;
-        _textView.frame = CGRectMake(15, 15 + 32 + 7, CGRectGetWidth(self.bounds) - 30, _model.contentHeight);
+//        NSMutableAttributedString * contentAttr = [self attributedStringForContent:_model.content];
+//        NSDictionary *linkAttributes = @{NSForegroundColorAttributeName: [UIColor greenColor],
+//                                         NSLigatureAttributeName : @(-5)};
+//        _textView.attributedText = contentAttr;
+//        _textView.linkTextAttributes = linkAttributes;
+//        _textView.frame = CGRectMake(15, 15 + 32 + 7, CGRectGetWidth(self.bounds) - 30, _model.contentHeight);
+        
+        NSDictionary *attributes = @{NSFontAttributeName : [UIFont systemFontOfSize:12]};
+        NSTextStorage * textStorage = [[[QLWeiboContentStorage alloc] init] storageWithText:_model.content];
+        [textStorage addAttributes:attributes range:NSMakeRange(0, textStorage.length)];
+        _weiboView.textStorage = textStorage;
+        
+        CGSize size = [_weiboView sizeThatFits:CGSizeMake(200, 100)];
+        NSLog(@"size:%@", NSStringFromCGSize(size));
+        
+        CGRect rect = _weiboView.frame;
+        rect.size.height = size.height;
+        _weiboView.frame = rect;
     }
 
 }

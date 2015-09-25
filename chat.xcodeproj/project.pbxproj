@@ -35,6 +35,7 @@
 		2D7FDB9E1ABAA76A00B4F9F5 /* BrowserImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7FDB981ABAA76A00B4F9F5 /* BrowserImageView.m */; };
 		2D7FDB9F1ABAA76A00B4F9F5 /* SDPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7FDB9A1ABAA76A00B4F9F5 /* SDPhotoBrowser.m */; };
 		2D7FDBA01ABAA76A00B4F9F5 /* SDWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7FDB9D1ABAA76A00B4F9F5 /* SDWaitingView.m */; };
+		2D842FAB1B2ECD63002432E2 /* QLTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D842FAA1B2ECD63002432E2 /* QLTextView.m */; };
 		2DF04BCA1AA8037900C4B163 /* d_numa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF04BC91AA8037900C4B163 /* d_numa@2x.png */; };
 		2DF04BCC1AA804EA00C4B163 /* d_numa_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DF04BCB1AA804EA00C4B163 /* d_numa_s@2x.png */; };
 		2DFCD8861ABFC03D00FF88D1 /* QLTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFCD8851ABFC03D00FF88D1 /* QLTextStorage.m */; };
@@ -98,6 +99,9 @@
 		2D7FDB9B1ABAA76A00B4F9F5 /* SDPhotoBrowserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPhotoBrowserConfig.h; sourceTree = "<group>"; };
 		2D7FDB9C1ABAA76A00B4F9F5 /* SDWaitingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWaitingView.h; sourceTree = "<group>"; };
 		2D7FDB9D1ABAA76A00B4F9F5 /* SDWaitingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWaitingView.m; sourceTree = "<group>"; };
+		2D842FA91B2ECD63002432E2 /* QLTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLTextView.h; sourceTree = "<group>"; };
+		2D842FAA1B2ECD63002432E2 /* QLTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLTextView.m; sourceTree = "<group>"; };
+		2DAE80F81ACD39DA00197B4B /* nav_bg_img@2x.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "nav_bg_img@2x.psd"; sourceTree = "<group>"; };
 		2DF04BC91AA8037900C4B163 /* d_numa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "d_numa@2x.png"; sourceTree = "<group>"; };
 		2DF04BCB1AA804EA00C4B163 /* d_numa_s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "d_numa_s@2x.png"; sourceTree = "<group>"; };
 		2DFCD8841ABFC03D00FF88D1 /* QLTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLTextStorage.h; sourceTree = "<group>"; };
@@ -130,6 +134,7 @@
 		2D16FC161AA9542900BB45BE /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				2D842FA81B2ECC4B002432E2 /* UITextView */,
 				2D7F787A1AC133D10003AA2F /* QLWeiboContentView */,
 				2DFCD8831ABFBFCE00FF88D1 /* TextKit */,
 				2D1C901F1A8C92C6006A63BA /* ViewController.h */,
@@ -224,6 +229,7 @@
 				2DF04BC91AA8037900C4B163 /* d_numa@2x.png */,
 				2D1C90191A8C92C6006A63BA /* Info.plist */,
 				2D1C901A1A8C92C6006A63BA /* main.m */,
+				2DAE80F81ACD39DA00197B4B /* nav_bg_img@2x.psd */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -270,6 +276,15 @@
 				2D7FDB9D1ABAA76A00B4F9F5 /* SDWaitingView.m */,
 			);
 			path = SDPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		2D842FA81B2ECC4B002432E2 /* UITextView */ = {
+			isa = PBXGroup;
+			children = (
+				2D842FA91B2ECD63002432E2 /* QLTextView.h */,
+				2D842FAA1B2ECD63002432E2 /* QLTextView.m */,
+			);
+			name = UITextView;
 			sourceTree = "<group>";
 		};
 		2DFCD8831ABFBFCE00FF88D1 /* TextKit */ = {
@@ -454,6 +469,7 @@
 				2D7FDB9E1ABAA76A00B4F9F5 /* BrowserImageView.m in Sources */,
 				2D7F787D1AC134820003AA2F /* QLWeiboContentView.m in Sources */,
 				2D16FC271AA9742A00BB45BE /* EGORefreshTableHeaderView.m in Sources */,
+				2D842FAB1B2ECD63002432E2 /* QLTextView.m in Sources */,
 				2D1D12EB1AA5BB1D00996D30 /* NSString+Custom.m in Sources */,
 				2D1C901E1A8C92C6006A63BA /* AppDelegate.m in Sources */,
 				2D7F78801AC134C70003AA2F /* QLWeiboContentLayoutManager.m in Sources */,
